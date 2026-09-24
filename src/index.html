@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parallax</title>
+  <link rel="stylesheet" href="assets/stylesheet/output.css">
+  <link rel="stylesheet" href="assets/stylesheet/master.css">
+  <link rel="stylesheet" href="assets/library/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/font/Merriweather-VariableFont_opsz,wdth,wght.ttf">
+  <link rel="stylesheet" href="assets/font/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf">
+</head>
+
+<body>
+  <header class="fixed top-0 z-[100] w-full bg-white/10 backdrop-blur-md border-b border-white/20">
+    <nav class="w-full px-6 py-4 flex items-center justify-center">
+      <div class="flex items-center gap-8 md:gap-12">
+        <a href="#"
+          class="text-amber-900 text-sm md:text-base font-medium hover:opacity-60 transition-opacity duration-300">Home</a>
+        <a href="#"
+          class="text-amber-900 text-sm md:text-base font-medium hover:opacity-60 transition-opacity duration-300">About</a>
+        <a href="#"
+          class="text-amber-900 text-sm md:text-base font-medium hover:opacity-60 transition-opacity duration-300">Design</a>
+        <a href="#"
+          class="text-amber-900 text-sm md:text-base font-medium hover:opacity-60 transition-opacity duration-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper relative w-full overflow-hidden">
+    <div class="content relative w-full overflow-x-hidden">
+      <section class="section hero w-full h-[100vh] bg-black overflow-hidden relative">
+        <div class="absolute inset-0 h-full w-full">
+          <video src="assets/img/video.mp4" autoplay muted class="object-cover h-full w-full"></video>
+        </div>
+        <div class="absolute inset-0 bg-black/40 z-12"></div>
+        <div class="hero-text absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+          <h1 id="heroTitle" class="text-white text-center text-6xl md:text-8xl font-bold uppercase"></h1>
+        </div>
+        <!-- IMAGE 1 -->
+        <div class="parallax-card card-1 absolute z-20 left-0 top-0 w-full h-screen overflow-hidden isolate">
+          <img src="assets/img/img1.jpg" alt="Image 1" class="card-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
+          <div class="card-text absolute inset-0 z-20 flex items-center justify-center">
+            <h2 class="card-title text-white text-5xl md:text-8xl font-bold uppercase text-center">
+            </h2>
+          </div>
+        </div>
+        <!-- IMAGE 2 -->
+        <div class="parallax-card card-2 absolute z-30 left-0 top-0 w-full h-screen overflow-hidden">
+          <img src="assets/img/img2.jpg" alt="Image 2" class="card-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
+          <div class="card-text absolute inset-0 z-20 flex items-center justify-center">
+            <h2 class="card-title text-white text-5xl md:text-8xl font-bold uppercase text-center">
+            </h2>
+          </div>
+        </div>
+        <!-- IMAGE 3 -->
+        <div class="parallax-card card-3 absolute z-40 left-0 top-0 w-full h-screen overflow-hidden">
+          <img src="assets/img/img3.jpg" alt="Image 3" class="card-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
+          <div class="card-text absolute inset-0 z-20 flex items-center justify-center">
+            <h2 class="card-title text-white text-5xl md:text-8xl font-bold uppercase text-center">
+            </h2>
+          </div>
+        </div>
+        <!-- IMAGE 4 -->
+        <div class="parallax-card card-4 absolute z-50 left-0 top-0 w-full h-screen overflow-hidden">
+          <img src="assets/img/img4.jpg" alt="Image 4" class="card-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
+          <div class="card-text absolute inset-0 z-20 flex items-center justify-center">
+            <h2 class="card-title text-white text-5xl md:text-8xl font-bold uppercase text-center">
+            </h2>
+          </div>
+        </div>
+        <section class="image-text-section absolute inset-0 z-[60] w-full h-screen overflow-hidden">
+          <div class="final-image absolute inset-0 w-full h-full">
+            <img src="assets/img/image1.png" alt="Home design" class="w-full h-full object-cover">
+          </div>
+          <div class="home-text absolute right-[5%] top-1/2 -translate-y-1/2 w-[30%] z-20">
+            <p class="text-reveal text-4xl leading-relaxed text-amber-900">
+              Warm home design blends natural textures, soft neutral tones, and thoughtful details to create a cozy,
+              elegant, and inviting living space.
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- ///////////////////swiper///////////////////// -->
+      <section class="w-full bg-[#F3DBC5]">
+        <!-- ================= CUBE EFFECT ================= -->
+        <div class="w-full h-screen flex items-center justify-between p-4">
+          <!-- TEXT -->
+          <div class="h-full w-1/2 p-12 flex items-center justify-center">
+            <p class="text-reveal text-amber-900 text-5xl leading-[1.15] font-light max-w-xl">
+              Create a warm and elegant home where thoughtful details, natural colors,and timeless furniture come
+              together to make every space feel comfortableand inviting.
+            </p>
+          </div>
+          <!-- SLIDER RIGHT -->
+          <div class="h-full w-1/2 py-6 px-16 overflow-hidden flex items-center justify-center">
+            <div class="swiper cubeSwiper h-full w-[80%] overflow-hidden">
+              <div class="swiper-wrapper h-full">
+                <div class="swiper-slide h-full">
+                  <img src="assets/img/amir-hossein-zYfuVYqCdo4-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/bilal-mansuri-1dL6msE7P9s-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/bilal-mansuri-DrHk6SBBm_s-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/fabienne-campello-aOl8XGbizOU-unsplash.jpg"
+                    class="w-full h-full block object-cover" alt="Home Design" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= CARD EFFECT ================= -->
+        <div class="w-full h-screen flex items-center justify-center p-4">
+          <!-- SLIDER LEFT -->
+          <div class="h-full w-1/2 py-6 px-16 overflow-hidden">
+            <div class="swiper cardSwiper h-full w-[80%] overflow-hidden">
+              <div class="swiper-wrapper h-full">
+                <div class="swiper-slide h-full">
+                  <img src="assets/img/prydumano-design-otLKhXXxnOU-unsplash.jpg"
+                    class="w-full h-full block object-cover" alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/rishi-raj-khare--_HcP7vtW70-unsplash.jpg"
+                    class="w-full h-full block object-cover" alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/sufyan-nByAJ62gqQc-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/bilal-mansuri-DrHk6SBBm_s-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TEXT -->
+          <div class="h-full w-1/2 p-12 flex items-center justify-center">
+            <p class="scroll-text text-amber-900 text-5xl leading-[1.15] font-light max-w-xl">
+              Beautiful home design is about balance,combining soft textures,neutral tones,modern furniture,and personal
+              touches to create spaces that feel calm and inspiring.
+            </p>
+          </div>
+        </div>
+        <!-- ================= FLIP EFFECT ================= -->
+        <div class="w-full h-screen flex items-center justify-center p-4">
+          <!-- TEXT -->
+          <div class="h-full w-1/2 p-12 flex items-center justify-center">
+            <p class="scroll-text text-amber-900 text-5xl leading-[1.15] font-light max-w-xl">
+              Transform your home with carefully chosen colors,elegant materials,and functional layouts that bring
+              personality,comfort,and a sophisticated atmosphere to every room.
+            </p>
+          </div>
+          <!-- SLIDER RIGHT -->
+          <div class="h-full w-1/2 px-16 py-6 overflow-hidden">
+            <div class="swiper flipSwiper h-full w-[80%] overflow-hidden">
+              <div class="swiper-wrapper h-full">
+                <div class="swiper-slide h-full">
+                  <img src="assets/img/fabienne-campello-aOl8XGbizOU-unsplash.jpg"
+                    class="w-full h-full block object-cover" alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/mk-s-zD03d6LiYcM-unsplash (1).jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/naksha-banwao-QSXDXnYE8WQ-unsplash.jpg" class="w-full h-full block object-cover"
+                    alt="Home Design" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/poojan-thanekar-Ti5Fm0mdmZA-unsplash.jpg"
+                    class="w-full h-full block object-cover" alt="Home Design" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full h-[70vh] flex justify-evenly items-center bg-[#f3dbc5] pt-10 pb-8">
+           <div class="w-1/3 h-full flex items-center justify-center p-12">
+              <img src="assets/img/11.png" alt="" class="w-full h-full object-cover">
+           </div>
+           <div class="w-1/3 h-full flex items-center justify-center">
+                <p class="text-4xl text-amber-900">HAVE A GOOD NEGOTIATION</p>
+           </div>
+           <div class="w-1/3 h-full flex items-center justify-center p-12">
+              <img src="assets/img/111.png" alt="" class="w-full h-full object-cover">
+           </div>
+      </section>
+      
+    </div>
+    <div class="image-container w-full h-screen absolute right-0 left-0 top-0 overflow-hidden perspective-[500px] z-20">
+      <img src="assets/img/home.webp" alt="image" class="w-full h-screen object-cover object-center">
+    </div>
+  </div>
+  <!-- ///////////////////////////////// -->
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#2b231f] text-white px-6 md:px-12 py-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- IMAGE -->
+        <div class="flex items-center gap-5">
+          <img src="assets/img/yasi.jpg" alt="Interior Design" class="w-full h-40 object-cover rounded-sm opacity-90">
+        </div>
+        <!-- DESCRIPTION -->
+        <div class="flex flex-col items-start justify-center">
+          <h3 class="text-lg font-medium tracking-wide mb-3">
+            Yasaman Mirzaei
+          </h3>
+
+        </div>
+        <div>
+          <p class="text-lg font-medium tracking-wide mb-3">
+            Fron-End Developer
+          </p>
+          <p></p>
+        </div>
+        <!-- SOCIAL MEDIA -->
+        <div>
+          <div class="flex items-center gap-5">
+            <a href="https://www.instagram.com/yasaman_dev?igsh=MWZkMGNmazlidTV3cQ==" aria-label="Instagram"
+              class="text-white/60 hover:text-white transition-colors duration-300">
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/yasaman-mirzaei-b9499537b" aria-label="Pinterest"
+              class="text-white/60 hover:text-white transition-colors duration-300">
+              Linkedin
+            </a>
+            <a href="https://github.com/yasamanmrz" aria-label="Behance"
+              class="text-white/60 hover:text-white transition-colors duration-300">
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- BOTTOM -->
+      <div class="mt-10 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between gap-3">
+        <p class="text-xs text-white/40">
+          © 2026 Interior Design
+        </p>
+        <p class="text-xs text-white/40">
+          Crafted with simplicity.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="assets/library/gsap.min.js"></script>
+<script src="assets/library/TextPlugin.min.js"></script>
+<script src="assets/library/ScrollTrigger.min.js"></script>
+<script src="assets/library/swiper-bundle.min.js"></script>
+<script src="assets/js/master.js"></script>
+
+</html>
